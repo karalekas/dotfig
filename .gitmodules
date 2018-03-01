@@ -4,3 +4,6 @@
 [submodule "dotfiles/zsh/.zsh/plugins/zsh-syntax-highlighting"]
 	path = dotfiles/zsh/.zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "dotfiles/zsh/.zsh/plugins/zsh-autosuggestions"]
+	path = dotfiles/zsh/.zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
