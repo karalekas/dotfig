@@ -14,3 +14,8 @@ eval "$(pyenv virtualenv-init -)"
 # vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# oh-my-zsh
+ZSH_THEME="robbyrussell"
+export ZSH="$HOME/.oh-my-zsh"
+source "$ZSH/oh-my-zsh.sh"
