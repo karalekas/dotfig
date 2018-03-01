@@ -1,3 +1,6 @@
 [submodule "dotfiles/zsh/.oh-my-zsh"]
 	path = dotfiles/zsh/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "dotfiles/zsh/.zsh/plugins/zsh-syntax-highlighting"]
+	path = dotfiles/zsh/.zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
