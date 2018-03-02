@@ -5,13 +5,13 @@
 all: macos python lisp dotfiles
 
 macos: macos/Makefile
-    make -C macos
+	make -C macos
 
 python: python/Makefile
-    make -C python
+	make -C python
 
 lisp: lisp/Makefile
-    make -C lisp
+	make -C lisp
 
 dotfiles: dotfiles/Makefile
-    make -C dotfiles
+	make -C dotfiles
