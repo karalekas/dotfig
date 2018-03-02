@@ -4,3 +4,6 @@
 
 all: install.sh
 	./install.sh
+
+clean: clean.sh
+	./clean.sh
