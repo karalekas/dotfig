@@ -12,6 +12,7 @@ DOTFIG_BACKUP="$DOTFIG_HOME/backup/`date "+%F_%T"`"
 
 function back_up_dotfiles() {
     DIR=$1
+    echo "Backing up $DIR dotfiles"
     for DOTFILE in `ls -A $DIR`
     do
         if [ -e "$HOME/$DOTFILE" ]
@@ -28,7 +29,7 @@ function back_up_dotfiles() {
                 rm $HOME/$DOTFILE
             elif [ -d "$HOME/$DOTFILE" ]
             then
-                cp -R $HOME/$DOTFILE $DOTFIG_BACKUP/$DOTFILE
+                cp -LR $HOME/$DOTFILE $DOTFIG_BACKUP/$DOTFILE
                 rm -rf $HOME/$DOTFILE
             else
                 echo "Unknown file type for $HOME/$DOTFILE, exiting..."
