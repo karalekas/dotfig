@@ -36,4 +36,5 @@ do
         cp -R $LATEST_BACKUP/$DOTFILE $HOME/$DOTFILE
     else
         echo "Unknown file type for $LATEST_BACKUP/$DOTFILE, exiting..."
+    fi
 done
