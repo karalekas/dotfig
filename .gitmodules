@@ -10,3 +10,15 @@
 [submodule "dotfiles/tmux/.tmux/plugins/tpm"]
 	path = dotfiles/tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule "dotfiles/tmux/.tmux/plugins/tmux-continuum"]
+	path = dotfiles/tmux/.tmux/plugins/tmux-continuum
+	url = https://github.com/tmux-plugins/tmux-continuum.git
+[submodule "dotfiles/tmux/.tmux/plugins/tmux-resurrect"]
+	path = dotfiles/tmux/.tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect.git
+[submodule "dotfiles/tmux/.tmux/plugins/tmux-yank"]
+	path = dotfiles/tmux/.tmux/plugins/tmux-yank
+	url = https://github.com/tmux-plugins/tmux-yank.git
+[submodule "dotfiles/tmux/.tmux/plugins/tmux-copycat"]
+	path = dotfiles/tmux/.tmux/plugins/tmux-copycat
+	url = https://github.com/tmux-plugins/tmux-copycat.git
