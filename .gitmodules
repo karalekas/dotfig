@@ -7,3 +7,6 @@
 [submodule "dotfiles/zsh/.zsh/plugins/zsh-autosuggestions"]
 	path = dotfiles/zsh/.zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "dotfiles/tmux/.tmux/plugins/tpm"]
+	path = dotfiles/tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
