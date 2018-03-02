@@ -16,7 +16,7 @@ function back_up_dotfiles() {
     do
         if [ -e "$HOME/$DOTFILE" ]
         then
-            if [ -d "$DOTFIG_BACKUP" ]
+            if [ ! -d "$DOTFIG_BACKUP" ]
             then
                 echo "Making dotfig backup directory $DOTFIG_BACKUP"
                 mkdir -p $DOTFIG_BACKUP
