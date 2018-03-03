@@ -2,6 +2,20 @@
 
 Easy dotfile and configuration management!
 
+## macOS
+
+From the top-level directory, run `make macos`. This will
+install the XCode tools, which contain a ton of useful
+command-line goodies, and [Homebrew](https://brew.sh/),
+which is the unofficial package manager for macOS.
+
+After installing Hombrew, this will continue by installing
+a collection of brew formulae (e.g. `wget`) and cask apps
+(e.g. `iterm2`) that are useful in any macOS environment.
+
+Finally, this will install Deja Vu fonts, which are used
+in the editor settings.
+
 ## Dotfiles
 
 ### Installing the dotfig dotfiles
