@@ -16,16 +16,15 @@ rm expokit.tar.gz
 # compile shared / dynamic library
 cd /tmp/expokit/fortran
 gfortran -fPIC -c expokit.f
-if [`uname` = "Linux"]
+if [ `uname` = "Linux" ]
 then
     gfortran -shared -o expokit.so expokit.o -lblas -L/usr/lib/libblas.so -llapack -L/usr/lib/liblapack.so
+    mv expokit.so /usr/local/lib
 elif [ `uname` = "Darwin" ]
 then
     gfortran -dynamiclib -o expokit.dylib expokit.o -lblas -llapack
+    mv expokit.dylib /usr/local/lib
 else
     echo "Platform `uname` not supported, exiting..."
 fi
-
-# put the library in a usable location
-mv expokit.so /usr/local/lib
 rm -rf /tmp/expokit
