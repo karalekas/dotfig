@@ -10,10 +10,8 @@ xcode: xcode.sh
 	./xcode.sh
 
 .PHONY: homebrew
-homebrew: homebrew.sh brew.sh cask.sh
+homebrew: homebrew.sh brew-formulae cask-formulae
 	./homebrew.sh
-	./brew.sh
-	./cask.sh
 
 .PHONY: fonts
 fonts: fonts.sh
