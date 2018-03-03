@@ -7,4 +7,10 @@
 # Requires: None
 ###############################################################################
 
-xcode-select --install
+if [ `xcode-select -p | echo $?` -ne 0 ]
+then
+    echo "XCode tools are not installed, installing now..."
+    xcode-select --install
+else
+    echo "XCode tools are already installed, continuing..."
+fi
