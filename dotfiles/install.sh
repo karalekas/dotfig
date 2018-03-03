@@ -29,7 +29,7 @@ back_up_dotfiles () {
                 rm $HOME/$DOTFILE
             elif [ -d "$HOME/$DOTFILE" ]
             then
-                cp -LR $HOME/$DOTFILE $DOTFIG_BACKUP/$DOTFILE
+                cp -HR $HOME/$DOTFILE $DOTFIG_BACKUP/$DOTFILE
                 rm -rf $HOME/$DOTFILE
             else
                 echo "Unknown file type for $HOME/$DOTFILE, exiting..."
