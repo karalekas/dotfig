@@ -10,7 +10,7 @@
 DOTFIG_HOME="$HOME/.dotfig"
 DOTFIG_BACKUP="$DOTFIG_HOME/backup/`date "+%F_%T"`"
 
-function back_up_dotfiles() {
+back_up_dotfiles () {
     DIR=$1
     echo "Backing up $DIR dotfiles"
     for DOTFILE in `ls -A $DIR`
@@ -39,7 +39,7 @@ function back_up_dotfiles() {
     done
 }
 
-function stow_dotfiles() {
+stow_dotfiles () {
     DIR=$1
     echo "Installing $DIR dotfiles..."
     stow -t $HOME $DIR

@@ -9,7 +9,7 @@
 
 DOTFIG_HOME="$HOME/.dotfig"
 
-function unstow_dotfiles() {
+unstow_dotfiles () {
     DIR=$1
     echo "Uninstalling $DIR dotfiles..."
     stow -D -t $HOME $DIR
