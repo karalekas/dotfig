@@ -1,5 +1,3 @@
-[push]
-    default = simple
 [alias]
     awesomeness = rebase -i
     commitlog = log --oneline
@@ -7,5 +5,3 @@
     uncheckout = checkout --
     undo = reset HEAD~
     unstage = reset HEAD --
-[core]
-    editor = vim
