@@ -8,7 +8,7 @@
 ###############################################################################
 
 # install quicklisp
-curl -o /tmp/quicklisp.lisp 'http://beta.quicklisp.org/quicklisp.lisp'
+curl -o /tmp/quicklisp.lisp 'https://beta.quicklisp.org/quicklisp.lisp'
 sbcl --noinform --non-interactive \
          --load /tmp/quicklisp.lisp \
          --eval '(quicklisp-quickstart:install)'
