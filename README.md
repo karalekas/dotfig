@@ -4,9 +4,9 @@ Dotfig is a one-stop shop for easy dotfile and configuration
 management!
 
 The steps are:
-1. Install OS-specific settings ([macOS](#macOS) or [Ubuntu](#Ubuntu))
-2. Install language-specific settings ([Python](#Python) and [Lisp](#Lisp))
-3. Install dotfiles ([Dotfiles](#Dotfiles))
+1. Install OS-specific settings ([macOS](#macos) or [Ubuntu](#ubuntu))
+2. Install language-specific settings ([Python](#python) and [Lisp](#lisp))
+3. Install dotfiles ([Dotfiles](#dotfiles))
 
 ## macOS
 
@@ -47,7 +47,7 @@ After the Homebrew stuff is complete (which will take 10-15
 minutes), `make macos` will continue by running some scripts
 to improve your terminal experience. This includes installing
 the Deja Vu fonts, telling `iterm2` where to look for config
-files (which will be installed in the [Dotfiles](#Dotfiles)
+files (which will be installed in the [Dotfiles](#dotfiles)
 section), speeding up the key rate of your keyboard, and
 changing your shell to `zsh`.
 
