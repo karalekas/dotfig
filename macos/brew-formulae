@@ -6,6 +6,7 @@ jq
 lapack
 libffi
 postgresql
+readline
 rlwrap
 ruby
 sbcl
@@ -14,5 +15,6 @@ terraform
 tmux
 wget
 xclip
+xz
 yarn
 zmq
