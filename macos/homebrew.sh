@@ -7,7 +7,7 @@
 # Requires: xcode-tools (curl, ruby)
 ###############################################################################
 
-if [ `which brew | echo $?` -ne 0 ]
+if [ `which brew > /dev/null ; echo $?` -ne 0 ]
 then
     echo "Homebrew is not installed, installing now..."
     yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
