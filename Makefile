@@ -20,3 +20,7 @@ lisp: lisp/Makefile
 .PHONY: dotfiles
 dotfiles: dotfiles/Makefile
 	make -C dotfiles
+
+.PHONY: editors
+editors: editors/Makefile
+	make -C editors
