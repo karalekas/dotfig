@@ -1,0 +1,16 @@
+build-essential
+curl
+emacs
+htop
+libblas-dev
+libffi-dev
+libgfortran3
+liblapack-dev
+libz-dev
+rlwrap
+sbcl
+stow
+tmux
+vim
+wget
+zsh
