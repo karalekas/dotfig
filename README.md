@@ -3,6 +3,11 @@
 Dotfig is a one-stop shop for easy dotfile and configuration
 management!
 
+The steps are:
+1. Install OS-specific settings ([macOS](#macOS) or [Ubuntu](#Ubuntu))
+2. Install language-specific settings ([Python](#Python) and [Lisp](#Lisp))
+3. Install dotfiles ([Dotfiles](#Dotfiles))
+
 ## macOS
 
 To set up your new Mac with dotfig, you first need to clone
@@ -74,6 +79,19 @@ This will install a collection of apt packages (e.g. `wget`)
 that you will need in your Ubuntu environment. To see the
 full list of packages that will be installed, check out the
 `apt-packages` file in the `ubuntu` subdirectory.
+
+## Python
+
+From the top-level directory, run `make python`. This will
+install `pyenv` on your computer, which is a great piece of
+software for managing multiple versions of python and
+virtual environments.
+
+## Lisp
+
+From the top-level directory, run `make lisp`. This will
+install `quicklisp`, the package manager for Lisp, and
+`expokit`, a matrix exponentiation library.
 
 ## Dotfiles
 
