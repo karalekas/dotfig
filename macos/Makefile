@@ -19,8 +19,3 @@ fonts: fonts.sh
 .PHONY: iterm
 iterm: iterm.sh
 	./iterm.sh
-
-.PHONY: editors
-editors: pycharm.sh sublime.sh
-	./pycharm.sh
-	./sublime.sh
