@@ -4,7 +4,7 @@
 #
 # Install iTerm2 profile
 #
-# Order: After cask and dotfile installation
+# Order: After homebrew
 #
 # Requires: None
 ###############################################################################
