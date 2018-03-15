@@ -10,7 +10,7 @@ homebrew: homebrew.sh brew-formulae cask-formulae
 	./homebrew.sh
 
 .PHONY: terminal
-terminal: fonts iterm keyboard
+terminal: fonts iterm keyboard chsh
 
 .PHONY: fonts
 fonts: fonts.sh
@@ -23,3 +23,7 @@ iterm: iterm.sh
 .PHONY: keyboard
 keyboard: keyboard.sh
 	./keyboard.sh
+
+.PHONY: chsh
+chsh: chsh.sh
+	./chsh.sh

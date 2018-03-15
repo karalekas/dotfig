@@ -43,7 +43,8 @@ minutes), `make macos` will continue by running some scripts
 to improve your terminal experience. This includes installing
 the Deja Vu fonts, telling `iterm2` where to look for config
 files (which will be installed in the [Dotfiles](#Dotfiles)
-section), and speeding up the key rate of your keyboard.
+section), speeding up the key rate of your keyboard, and
+changing your shell to `zsh`.
 
 ## Ubuntu
 
