@@ -45,6 +45,35 @@ the Deja Vu fonts, telling `iterm2` where to look for config
 files (which will be installed in the [Dotfiles](#Dotfiles)
 section), and speeding up the key rate of your keyboard.
 
+## Ubuntu
+
+To set up your new Ubuntu machine with dotfig, you first need
+to clone the repository. However, this requires `git`, which
+will not be initially installed on your machine. To get `git`
+on your Ubuntu machine, do the following:
+
+```bash
+sudo apt-get install -y git
+```
+
+This installation will be very quick, and will require you
+to enter your password for authentication. Once the
+installation is complete, you'll need to clone dotfig. You
+can do this with:
+
+```bash
+git clone --recurse-submodules https://github.com/pkaralekas/dotfig
+```
+
+It is important that you include `--recurse-submodules`, because
+otherwise some of the code in dotfig will not be downloaded.
+
+Within the top-level directory of dotfig, run `make ubuntu`.
+This will install a collection of apt packages (e.g. `wget`)
+that you will need in your Ubuntu environment. To see the
+full list of packages that will be installed, check out the
+`apt-packages` file in the `ubuntu` subdirectory.
+
 ## Dotfiles
 
 ### Installing the dotfig dotfiles

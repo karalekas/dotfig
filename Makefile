@@ -9,6 +9,10 @@ all: macos python lisp dotfiles
 macos: macos/Makefile
 	make -C macos
 
+.PHONY: ubuntu
+ubuntu: ubuntu/Makefile
+	make -C ubuntu
+
 .PHONY: python
 python: python/Makefile
 	make -C python
