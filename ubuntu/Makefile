@@ -6,5 +6,5 @@
 all: apt
 
 .PHONY: apt
-xcode: apt.sh
+all: apt.sh
 	./apt.sh
