@@ -1,15 +1,15 @@
 #!/bin/sh
 ###############################################################################
-# Usage: install_sbcl.sh [VERSION]
+# Usage: sbcl.sh [VERSION]
 #
 # Upgrade sbcl from source
 #
-# Requires (Mac): xcode tools (make, zlib.sh)
+# Requires (Mac): xcode tools (make, zlib.sh), sbcl (brew)
 # Requires (Ubuntu): build-essential (make), libz-dev (zlib.h), sbcl, wget
 ###############################################################################
 
 # check for version
-DEFAULT_SBCL_VERSION=1.4.3
+DEFAULT_SBCL_VERSION=1.4.5
 if [ -z "$1" ]
 then
     SBCL_VERSION=$DEFAULT_SBCL_VERSION
