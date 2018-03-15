@@ -3,11 +3,7 @@
 ################################################################################
 
 .PHONY: all
-all: xcode homebrew fonts
-
-.PHONY: xcode
-xcode: xcode.sh
-	./xcode.sh
+all: homebrew fonts
 
 .PHONY: homebrew
 homebrew: homebrew.sh brew-formulae cask-formulae
