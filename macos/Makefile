@@ -3,18 +3,24 @@
 ################################################################################
 
 .PHONY: all
-all: homebrew fonts
+all: homebrew terminal
 
 .PHONY: homebrew
 homebrew: homebrew.sh brew-formulae cask-formulae
 	./homebrew.sh
 
+.PHONY: terminal
+terminal: fonts iterm
+
 .PHONY: fonts
 fonts: fonts.sh
 	./fonts.sh
 
-.PHONY: editors
-editors: iterm.sh pycharm.sh sublime.sh
+.PHONY: iterm
+iterm: iterm.sh
 	./iterm.sh
+
+.PHONY: editors
+editors: pycharm.sh sublime.sh
 	./pycharm.sh
 	./sublime.sh
