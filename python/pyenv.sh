@@ -14,6 +14,7 @@ if [ ! -d "$HOME/.pyenv" ]
 then
     echo "Pyenv does not exist, installing now... (this takes about 10 minutes)"
     curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+    PATH="$HOME/.pyenv/bin:$PATH"
     echo "Installing Python 3.6.3..."
     pyenv install 3.6.3
     echo "Installing Python 2.7.14..."
