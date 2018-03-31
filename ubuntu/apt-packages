@@ -1,6 +1,7 @@
 build-essential
 curl
 emacs
+gfortran
 htop
 libblas-dev
 libbz2-dev
