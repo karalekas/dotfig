@@ -80,6 +80,7 @@ that you will need in your Ubuntu environment. To see the
 full list of packages that will be installed, check out the
 `apt-packages` file in the `ubuntu` subdirectory.
 
+When installing below, it's important to run `chsh -s $(which zsh)` after `make`-ing the dotfiles, and before `make`-ing the python or lisp configurations, as those commands depend on commands run during the dotfile setup.
 ## Python
 
 From the top-level directory, run `make python`. This will
