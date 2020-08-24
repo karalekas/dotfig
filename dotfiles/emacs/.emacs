@@ -1,8 +1,8 @@
 ;; SLIME
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 
-;; Path to SBCL implementation
-(setq inferior-lisp-program "/usr/local/bin/sbcl")
+;; Path to SBCL implementation (with 4GB of workspace)
+(setq inferior-lisp-program "/usr/local/bin/sbcl --dynamic-space-size 4096")
 
 ;; Electric return
 (defvar electrify-return-match
