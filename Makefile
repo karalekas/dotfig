@@ -5,6 +5,10 @@
 .PHONY: all
 all: macos python lisp dotfiles
 
+.PHONY: centos
+centos: centos/Makefile
+	make -C centos
+
 .PHONY: macos
 macos: macos/Makefile
 	make -C macos

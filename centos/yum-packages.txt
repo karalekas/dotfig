@@ -1,0 +1,17 @@
+bzip2-devel
+curl
+gcc-c++
+libffi-devel
+llvm
+lzma
+ncurses-devel
+openssl-devel
+readline-devel
+sqlite-devel
+stow
+tkinter
+tmux
+wget
+xz
+zlib-devel
+zsh
