@@ -71,6 +71,9 @@
   (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
 (package-initialize)
 
+;; Save minibuffer history
+(savehist-mode 1)
+
 ;; Spaces instead of tabs
 (setq-default indent-tabs-mode nil)
 
