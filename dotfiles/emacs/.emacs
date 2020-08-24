@@ -83,10 +83,13 @@
 ;; Start in full screen
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-;;; UI bar settings
+;; UI bar settings
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
 (menu-bar-mode +1)
+
+;; Larger default font size
+(set-face-attribute 'default nil :height 170)
 
 ;; Safe color themes
 (custom-set-variables
