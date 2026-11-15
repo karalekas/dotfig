@@ -3,16 +3,8 @@
 ################################################################################
 
 .PHONY: all
-all: sbcl quicklisp expokit
-
-.PHONY: sbcl
-sbcl: sbcl.sh
-	./sbcl.sh
+all: quicklisp
 
 .PHONY: quicklisp
 quicklisp: quicklisp.sh
 	./quicklisp.sh
-
-.PHONY: expokit
-expokit: expokit.sh
-	./expokit.sh
