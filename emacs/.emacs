@@ -1,8 +1,11 @@
-;; SLIME
-(load (expand-file-name "~/quicklisp/slime-helper.el"))
+;; SLIME, once lisp/quicklisp.sh has installed it (make -C lisp quicklisp)
+(let ((helper (expand-file-name "~/quicklisp/slime-helper.el")))
+  (when (file-exists-p helper) (load helper)))
 
-;; Path to SBCL implementation (with 4GB of workspace)
-(setq inferior-lisp-program "/usr/local/bin/sbcl --dynamic-space-size 4096")
+;; SBCL from Homebrew (/opt/homebrew on Apple Silicon), with 4GB of workspace
+(setq inferior-lisp-program
+      (concat (or (executable-find "sbcl") "/opt/homebrew/bin/sbcl")
+              " --dynamic-space-size 4096"))
 
 ;; Electric return
 (defvar electrify-return-match

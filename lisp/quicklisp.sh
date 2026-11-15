@@ -21,3 +21,6 @@ rm -f /tmp/quicklisp.lisp
 
 # update quicklisp
 sbcl --eval "(ql:update-all-dists :prompt nil)" --quit
+
+# SLIME for Emacs (~/quicklisp/slime-helper.el, which emacs/.emacs loads)
+sbcl --non-interactive --eval '(ql:quickload "quicklisp-slime-helper")'
