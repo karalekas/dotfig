@@ -1,0 +1,24 @@
+# brew bundle --no-upgrade --file macos/Brewfile
+
+# command-line tools
+brew "cloc"         # count lines of code in a repo
+brew "gcc"          # gfortran, which MAGICL (quilc, QVM) needs to build expokit
+brew "gh"           # GitHub from the command line (repos, PRs, issues), for agents too
+brew "htop"         # see what's using CPU and memory
+brew "jq"           # install.sh edits the agents' JSON settings with it
+brew "lapack"       # linear algebra for MAGICL (quilc, QVM)
+brew "node"         # JavaScript tools, and npm for agent add-ons
+brew "ripgrep"      # fast code search (rg), which agents use too
+brew "sbcl"         # Common Lisp (see lisp/)
+brew "tmux"         # terminal sessions in iTerm2 that survive restarts
+brew "uv"           # Python: versions, project environments, and tools
+brew "zsh-syntax-highlighting"   # colors commands as you type them
+
+# apps
+cask "basictex"     # LaTeX (pdflatex), without the full MacTeX
+cask "cmux"         # the terminal for coding agents
+cask "codex"        # OpenAI's coding agent (Claude Code has its own installer)
+cask "emacs-app"    # Emacs, for Common Lisp with SLIME
+cask "font-dejavu"  # DejaVu Sans Mono, Sublime Text's font
+cask "iterm2"       # the terminal for everything else
+cask "sublime-text" # text editor

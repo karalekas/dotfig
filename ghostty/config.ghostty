@@ -1,0 +1,12 @@
+# Ghostty config; cmux reads it too. Gruvbox Dark ships with both apps and
+# matches macos/iterm/Gruvbox Dark.itermcolors.
+theme = Gruvbox Dark
+font-family = Menlo
+font-size = 18
+# no sound on bell; keep the dock bounce and title marker
+bell-features = no-system,no-audio,attention,title
+# steady block cursor, like iTerm; no-cursor stops shell integration from
+# switching to a bar at the prompt
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor

@@ -1,0 +1,19 @@
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[alias]
+	awesomeness = rebase -i
+	commitlog = log --oneline
+	last = log -1 HEAD
+	uncheckout = checkout --
+	undo = reset HEAD~
+	unstage = reset HEAD --
+	# worktrees: one per parallel agent task
+	wt = worktree
+	wta = worktree add
+	wtl = worktree list
+	wtr = worktree remove
+[include]
+	# machine-specific settings (untracked), including [user] name and email
+	path = ~/.gitconfig.local

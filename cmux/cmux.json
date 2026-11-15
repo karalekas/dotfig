@@ -1,0 +1,84 @@
+{
+  "$schema": "https://raw.githubusercontent.com/manaflow-ai/cmux/main/web/data/cmux.schema.json",
+  "schemaVersion": 1,
+
+  // Settings not listed here fall back to the values saved in cmux Settings.
+  // Colors are from the Gruvbox Dark theme in config.ghostty.
+
+  // dark chrome, with Gruvbox blue (ANSI 4, the 44m background) in place of
+  // cmux blue
+  "app": {
+    "appearance": "dark",
+    "accentColor": "#458588",
+    // cmux's default scale; set here so a value saved in cmux Settings doesn't
+    // linger. Must be a multiple of 10 (cmux 0.65 rejects anything else)
+    "globalFontMagnification": 100,
+    // hide the workspace title bar; its controls move into the sidebar.
+    // cmux 0.64 ignores this, so macos/cmux.sh sets it in macOS preferences
+    "minimalMode": true
+  },
+
+  "browser": {
+    "theme": "dark",
+    // open clicked links, and `open https://...` from the shell, in your own
+    // browser, which already has your logins, password manager, and
+    // extensions (cmux's keeps its own cookies). cmux's browser is still
+    // there for anything you open in it yourself
+    "openTerminalLinksInCmuxBrowser": false,
+    "interceptTerminalOpenCommandInCmuxBrowser": false
+  },
+
+  // split pane dividers in the selection gray, focused pane outlined in blue
+  "paneBorderColor": "#665c54",
+  "activePaneBorderColor": "#458588",
+
+  // draw unread rings in Gruvbox yellow without flashing the pane when it's
+  // focused; silent, like bell-features in config.ghostty
+  "notifications": {
+    "paneFlash": false,
+    "paneFlashColor": "#fabd2f",
+    "sound": "none"
+  },
+
+  "sidebar": {
+    "workspaceDescriptionColor": "#a89984",
+    // off: claude/statusline.sh and codex/cmux-usage.sh already show the model
+    // and a context bar, and its Claude Code cost estimate is list-price only.
+    // Set false rather than removed, since cmux saves it in its preferences
+    // (compactAgentStatus was tried too, and left off)
+    "showAgentUsage": false,
+    // off: the row repeats the full hostname of `cmux ssh` workspaces
+    "showSSH": false
+  },
+
+  // paint the sidebar with the terminal background instead of a black tint
+  "sidebarAppearance": {
+    "matchTerminalBackground": true
+  },
+
+  "workspaceColors": {
+    "selectionColor": "#458588",
+    "notificationBadgeColor": "#cc241d",
+    // workspace color picker: the theme's ANSI colors
+    "colors": {
+      "Red": "#cc241d",
+      "Yellow": "#d79921",
+      "Green": "#98971a",
+      "Aqua": "#689d6a",
+      "Blue": "#458588",
+      "Purple": "#b16286",
+      "Gray": "#928374"
+    }
+  },
+
+  "agentChat": {
+    "fonts": {
+      "monoFamily": "Menlo",
+      "codeSize": 18
+    }
+  },
+
+  "markdown": {
+    "fontFamily": "Menlo"
+  }
+}
