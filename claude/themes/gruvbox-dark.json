@@ -1,0 +1,45 @@
+{
+  "name": "Gruvbox Dark",
+  "base": "dark-ansi",
+  "overrides": {
+    "claude": "#fe8019",
+    "text": "#ebdbb2",
+    "inverseText": "#282828",
+    "inactive": "#928374",
+    "subtle": "#665c54",
+    "suggestion": "#83a598",
+    "permission": "#83a598",
+    "remember": "#d3869b",
+
+    "success": "#b8bb26",
+    "error": "#fb4934",
+    "warning": "#fabd2f",
+    "merged": "#d3869b",
+
+    "promptBorder": "#665c54",
+    "planMode": "#8ec07c",
+    "autoAccept": "#d3869b",
+    "bashBorder": "#fabd2f",
+    "ide": "#83a598",
+    "fastMode": "#fabd2f",
+    "effortUltra": "#d3869b",
+
+    "diffAdded": "#32361a",
+    "diffRemoved": "#3c1f1e",
+    "diffAddedDimmed": "#2c2d20",
+    "diffRemovedDimmed": "#302423",
+    "diffAddedWord": "#4f5420",
+    "diffRemovedWord": "#5e2a27",
+
+    "userMessageBackground": "#3c3836",
+    "userMessageBackgroundHover": "#504945",
+    "bashMessageBackgroundColor": "#32302f",
+    "memoryBackgroundColor": "#32302f",
+    "selectionBg": "#504945",
+
+    "rate_limit_fill": "#83a598",
+    "rate_limit_empty": "#504945",
+    "briefLabelYou": "#83a598",
+    "briefLabelClaude": "#fe8019"
+  }
+}
