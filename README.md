@@ -105,6 +105,8 @@ On a new Mac:
 # 1. git (with the Xcode command-line tools) and Homebrew (https://brew.sh)
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"   # brew on PATH in this shell; after
+                                            # install.sh, zsh/lib/path.zsh does it
 
 # 2. this repo
 git clone https://github.com/karalekas/dotfig.git ~/code/dotfig
@@ -150,7 +152,9 @@ Then:
 - **For Common Lisp**, set up Quicklisp and SLIME: `make -C lisp quicklisp`.
 
 `install.sh` symlinks the files below into your home folder, moving
-anything already there to `~/.dotfig-backup/<timestamp>/`. It's safe to
+anything already there to `~/.dotfig-backup/<timestamp>/`. That includes a
+`~/.zprofile` that Homebrew's installer told you to edit: you don't need its
+`brew shellenv` line, since dotfig's zsh config puts Homebrew on PATH itself. It's safe to
 re-run, and re-running it is how to pick up anything it skipped because a
 tool wasn't set up yet: it prints `skip:` for those. Both `install.sh` and
 `restore.sh` take `--dry-run`.
